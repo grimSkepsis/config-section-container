@@ -1,4 +1,22 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+
+<configuration-section
+[sectionTitle]="'testTitle'">
+  <ng-template #leftContent>
+    test left description
+  </ng-template>
+  <ng-template #rightContent>
+    test right content
+  </ng-template>
+</configuration-section>
+
+<configuration-section
+[sectionTitle]="'testTitle'"
+[rightContentTopAligned]="false">
+  <ng-template #leftContent>
+    test left description
+  </ng-template>
+  <ng-template #rightContent>
+    test right content
+  </ng-template>
+</configuration-section>

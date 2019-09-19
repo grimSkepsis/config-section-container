@@ -6,7 +6,7 @@
     test left description
   </ng-template>
   <ng-template #rightContent>
-    test right content
+    test right content, title aligned
   </ng-template>
 </configuration-section>
 
@@ -17,6 +17,36 @@
     test left description
   </ng-template>
   <ng-template #rightContent>
-    test right content
+    test right content, description aligned
+  </ng-template>
+</configuration-section>
+
+<configuration-section
+[sectionTitle]="'testTitle'"
+[leftContentWidth]="'25%'">
+  <ng-template #leftContent>
+    test left description, 25% width
+  </ng-template>
+  <ng-template #rightContent>
+    test right content, title aligned
+  </ng-template>
+</configuration-section>
+
+
+<configuration-section
+[sectionTitle]="'testTitle'"
+[leftContentWidth]="'33%'">
+  <ng-template #leftContent>
+    test left description, 33% width
+  </ng-template>
+  <ng-template #rightContent>
+    <div class="row">
+      <div class="col">
+            test right divided content 1
+      </div>
+      <div class="col">
+            test right divided content 1
+      </div>
+    </div>
   </ng-template>
 </configuration-section>
